@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+
+    
+
+        <div class="alert alert-info" role="alert">
+      <h1>Quality Assurance Dashboard</h1>
+    </div>
+
+</head>
+<body>
+    <script src="Scripts/Chart.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+
+  <div class="navbar navbar-default ">     
+  <div class="navbar-inner">
+    <ul class="nav nav-pills navbar-form">
+        <li ><a href="DefectSeverity.html">Defects by Severity</a></li>
+        <li><a href="DefectStatus.html">Defects by Status</a></li>
+        <li ><a href="DefectsProjects.html">Defects by Project</a></li>
+        <li class="active" ><a href="ProjectStatus.html">Project Status</a></li>
+        <li ><a href="AboutUs.html">About Us</a></li>
+    </ul>
+  </div>
+</div>
+    
+    <div class="panel" >
+  <div class="panel-heading">
+    <h3 class="panel-title">Project Status</h3>
+    <table class="table table-condensed">
+      <thead class ="table">
+          <tr >
+        <td>No</td>
+        <td>Project Name</td>
+        <td>Start Date</td>
+        <td>Est Comp Date</td>
+        <td>Status</td>
+              </tr>
+      </thead>
+    <tr class="success">
+    <td>1</td>
+    <td>Project 1</td>
+    <td>01/04/2013</td>
+    <td>02/05/2015</td>
+    <td>Approved</td>
+    </tr>
+    <tr class="info">
+    <td>2</td>
+    <td>Project 2</td>
+    <td>03/04/2014</td>
+    <td>06/06/2015</td>
+    <td>On time</td>
+    </tr>
+
+    <tr class="danger">
+    <td>3</td>
+    <td>Project 3</td>
+    <td>01/04/2015</td>
+    <td>05/06/2015</td>
+    <td>Late</td>
+    </tr>
+
+    <tr class="warning">
+    <td>4</td>
+    <td>Project 4</td>
+    <td>02/05/2015</td>
+    <td>08/06/2015</td>
+    <td>On Hold</td>
+    </tr>
+        </table>
+
+      <div class="modal-footer">Project Status of Company</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+
+    
+
+        <div class="alert alert-info" role="alert">
+      <h1>Quality Assurance Dashboard</h1>
+    </div>
+
+</head>
+<body>
+    <script src="Scripts/Chart.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+
+  <div class="navbar navbar-default ">     
+  <div class="navbar-inner">
+    <ul class="nav nav-pills navbar-form">
+        <li class="active" ><a href="DefectSeverity.html">Defects by Severity</a></li>
+        <li ><a href="DefectStatus.html">Defects by Status</a></li>
+        <li ><a href="DefectsProjects.html">Defects by Project</a></li>
+        <li ><a href="ProjectStatus.html">Project Status</a></li>
+        <li ><a href="AboutUs.html">About Us</a></li>
+    </ul>
+  </div>
+</div>
+    
+    <div class="panel panel-primary" >
+  <div class="panel-heading">
+    <h3 class="panel-title">Defects By Severity</h3>
+  </div>
+  <div class="panel-body">
+      <div id="canvas-holder">
+			<canvas id="chart-area" width="400" height="400"/>
+		</div>
+	<script>
+
+
+	    var pieData = [
+				{
+				    value: 300,
+				    color: "#F7464A",
+				    highlight: "#FF5A5E",
+				    label: "Very High"
+				},
+				{
+				    value: 50,
+				    color: "#46BFBD",
+				    highlight: "#5AD3D1",
+				    label: "Medium"
+				},
+				{
+				    value: 100,
+				    color: "#FDB45C",
+				    highlight: "#FFC870",
+				    label: "High"
+				},
+				{
+				    value: 40,
+				    color: "#949FB1",
+				    highlight: "#A8B3C5",
+				    label: "Low"
+				},
+				{
+				    value: 120,
+				    color: "#4D5360",
+				    highlight: "#616774",
+				    label: "Very Low"
+				}
+
+	    ];
+
+	    window.onload = function () {
+	        var ctx = document.getElementById("chart-area").getContext("2d");
+	        window.myPie = new Chart(ctx).Pie(pieData);
+	    };
+
+
+
+	</script>
+      <div class="modal-footer">Total Defect Severity  of Company</div>
+  </div>
+</div>
+</body>
+</html>
